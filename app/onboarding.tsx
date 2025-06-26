@@ -10,7 +10,7 @@ export default function Onboarding() {
     // save to async storage
     try {
       await AsyncStorage.setItem('hasOnboarded', 'true');
-      router.replace('/');
+      router.replace('/login');
     } catch {
       Alert.alert('Error getting started');
     }
@@ -19,14 +19,14 @@ export default function Onboarding() {
 
   return (
     <View style={[styles.screen, styles.onboarding]}>
-      <View style={[styles.section, styles.sectionNarrow]}>
+      <View style={[styles.section, styles.sectionNarrow, styles.sectionCentered]}>
         <Image 
           source={require('../assets/images/logo.png')}
           style={{ width: 200, height: 200 }}
           resizeMode="contain"
         />
-        <Text style={styles.titleText}>Smart Wellness Alerts and Support</Text>
-        <Text style={[styles.centeredText, styles.text]}>
+        <Text style={[styles.h1, styles.centeredText]}>Smart Wellness Alerts and Support</Text>
+        <Text style={[styles.textLarge, styles.centeredText]}>
           Welcome to Lowkey support and connection. 
           Lowkey sends proactive alerts when something 
           is off to you and your people so you know 
@@ -34,7 +34,7 @@ export default function Onboarding() {
         </Text>
       </View>
 
-      <View style={styles.section}>
+      <View style={[styles.section, styles.sectionCentered]}>
         <Pressable 
           style={({ pressed }) => [
             styles.button,

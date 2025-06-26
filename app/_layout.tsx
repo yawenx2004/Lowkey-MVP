@@ -1,6 +1,7 @@
 import { Stack } from "expo-router";
 
 export default function RootLayout() {
+  // TODO conditional rendering with AsyncStorage
   const hasOnboarded = false;
 
   return (
