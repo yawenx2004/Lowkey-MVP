@@ -19,7 +19,10 @@ export default function Settings() {
   return (
     <View style={styles.screen}>
       <Pressable
-        style={styles.button}
+        style={({ pressed }) => [
+          styles.button,
+          pressed && styles.buttonPressed,
+        ]}
         onPress={handleLogout}
       >
         <Text style={styles.buttonText}>Logout</Text>

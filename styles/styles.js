@@ -10,11 +10,16 @@ export default StyleSheet.create({
 		width: '100%',
 		gap: 16,
 		alignItems: 'center',
-		marginBottom: 24,
+	},
+	sectionNarrow: {
+		width: '90%',
+	},
+	text: {
+		fontSize: 16,
 	},
 	titleText: {
 		fontWeight: 'bold',	
-		fontSize: 18,
+		fontSize: 20,
 		textAlign: 'center',
 		color: '#db2525',
 	},
@@ -27,16 +32,26 @@ export default StyleSheet.create({
 		alignItems: 'center',
 		backgroundColor: '#db2525',
 		borderRadius: 16,
+
+		shadowColor: '#000',
+  		shadowOffset: { width: 0, height: 2 },
+  		shadowOpacity: 0.25,
+  		shadowRadius: 2,
 	},
-	buttonHover: {
+	buttonPressed: {
 		backgroundColor: '#ba1c1c',
 	},
+	buttonGetStarted: {
+		width: '50%',
+		padding: 12,
+	},
 	buttonText: {
+		fontSize: 16,
 		fontWeight: 'bold',
 		color: '#FFFFFF',
 	},
 	onboarding: {
-		gap: 16,
+		gap: 48,
 		padding: 32,
 		paddingTop: 96,
 		backgroundColor: '#a0dedd',

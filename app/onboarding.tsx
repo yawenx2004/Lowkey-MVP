@@ -19,17 +19,14 @@ export default function Onboarding() {
 
   return (
     <View style={[styles.screen, styles.onboarding]}>
-      <View style={styles.section}>
+      <View style={[styles.section, styles.sectionNarrow]}>
         <Image 
           source={require('../assets/images/logo.png')}
           style={{ width: 200, height: 200 }}
           resizeMode="contain"
         />
-      </View>
-
-      <View style={styles.section}>
         <Text style={styles.titleText}>Smart Wellness Alerts and Support</Text>
-        <Text style={styles.centeredText}>
+        <Text style={[styles.centeredText, styles.text]}>
           Welcome to Lowkey support and connection. 
           Lowkey sends proactive alerts when something 
           is off to you and your people so you know 
@@ -39,7 +36,11 @@ export default function Onboarding() {
 
       <View style={styles.section}>
         <Pressable 
-          style={styles.button}
+          style={({ pressed }) => [
+            styles.button,
+            styles.buttonGetStarted,
+            pressed && styles.buttonPressed,
+          ]}
           onPress={handleGetStarted}
         >
           <Text style={styles.buttonText}>Get Started</Text>
@@ -47,10 +48,21 @@ export default function Onboarding() {
       </View>
 
       <View style={styles.section}>
-        <Pressable style={styles.button}>
+        <Pressable 
+          style={({ pressed }) => [
+            styles.button,
+            pressed && styles.buttonPressed,
+          ]}
+        >
           <Text style={styles.buttonText}>988 Crisis Line</Text>
         </Pressable>
-        <Pressable style={styles.button}>
+
+        <Pressable 
+          style={({ pressed }) => [
+            styles.button,
+            pressed && styles.buttonPressed,
+          ]}
+        >
           <Text style={styles.buttonText}>911 Emergency</Text>
         </Pressable>
       </View>
