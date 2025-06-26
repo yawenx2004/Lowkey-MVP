@@ -6,6 +6,7 @@ import styles from '../../styles/styles';
 export default function Settings() {
   const router = useRouter(); 
 
+  // TODO confirm logout with an alert first
   const handleLogout = async () => {
     // save to async storage
     try {
@@ -20,8 +21,8 @@ export default function Settings() {
     <View style={styles.screen}>
       <Pressable
         style={({ pressed }) => [
-          styles.button,
-          pressed && styles.buttonPressed,
+          styles.button3,
+          pressed && styles.button3Pressed,
         ]}
         onPress={handleLogout}
       >

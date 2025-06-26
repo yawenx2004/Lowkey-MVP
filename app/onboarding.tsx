@@ -19,7 +19,7 @@ export default function Onboarding() {
 
   return (
     <View style={[styles.screen, styles.onboarding]}>
-      <View style={[styles.section, styles.sectionNarrow, styles.sectionCentered]}>
+      <View style={[styles.section, styles.sectionNarrow, styles.sectionCentered, styles.sectionOnboarding]}>
         <Image 
           source={require('../assets/images/logo.png')}
           style={{ width: 200, height: 200 }}
@@ -34,7 +34,7 @@ export default function Onboarding() {
         </Text>
       </View>
 
-      <View style={[styles.section, styles.sectionCentered]}>
+      <View style={[styles.section, styles.sectionCentered, styles.sectionOnboarding]}>
         <Pressable 
           style={({ pressed }) => [
             styles.button,
@@ -47,7 +47,7 @@ export default function Onboarding() {
         </Pressable>
       </View>
 
-      <View style={styles.section}>
+      <View style={[styles.section, styles.sectionOnboarding]}>
         <Pressable 
           style={({ pressed }) => [
             styles.button,

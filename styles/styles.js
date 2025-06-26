@@ -1,17 +1,23 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+	scroll: {
+		backgroundColor: '#FFFFFF',
+	},
 	screen: {
 		flex: 1,
 		alignItems: 'center',
 		padding: 24,
-		gap: 24,
+		paddingBottom: 32,
+		paddingTop: 32,
+		gap: 16,
+		backgroundColor: '#FFFFFF',
 	},
 
 	// for different kinds of sections
 	section: {
 		width: '100%',
-		gap: 12,
+		gap: 8,
 		// alignItems: 'center',
 	},
 	sectionCentered: {
@@ -23,13 +29,19 @@ export default StyleSheet.create({
 	sectionOutlined: {
 		width: '100%',
 		padding: 16,
-		gap: 12,
+		paddingTop: 20,
+		paddingBottom: 20,
+		gap: 8,
 		backgroundColor: '#FFFFFF',
 		borderRadius: 16,
 
+		// border
+		borderWidth: 1,
+		borderColor: '#d2e8fc',
+
 		// shadow
 		shadowColor: '#000',
-  		shadowOffset: { width: 0, height: 2 },
+  		shadowOffset: { width: 0, height: 1 },
   		shadowOpacity: 0.25,
   		shadowRadius: 2,
 	},
@@ -42,6 +54,14 @@ export default StyleSheet.create({
 	textLarge: {
 		fontSize: 16,
 		textAlign: 'left',
+	},
+	subtitle: {
+		fontWeight: 'bold',
+		paddingTop: 8,
+		paddingBottom: 16,
+		fontSize: 16,
+		textAlign: 'left',
+		color: '#007AFF',
 	},
 	h1: {
 		fontWeight: 'bold',	
@@ -59,6 +79,7 @@ export default StyleSheet.create({
 		fontWeight: 'bold',	
 		fontSize: 18,
 		// textAlign: 'center',
+		paddingBottom: 8,
 	},
 	centeredText: {
 		textAlign: 'center',
@@ -91,6 +112,33 @@ export default StyleSheet.create({
 		color: '#FFFFFF',
 	},
 
+	button2: {
+		width: '100%',
+		padding: 6,
+		marginTop: 16,
+		alignItems: 'center',
+		backgroundColor: '#d2e8fc',
+		borderRadius: 16,
+	},
+	button2Pressed: {
+		backgroundColor: '#b7dafa',
+	},
+	button2Text: {
+		// fontWeight: 'bold',
+	},
+
+	button3: {
+		width: '100%',
+		padding: 8,
+		// marginTop: 16,
+		alignItems: 'center',
+		backgroundColor: '#007AFF',
+		borderRadius: 16,
+	},
+	button3Pressed: {
+		backgroundColor: '#b7dafa',
+	},
+	
 	// individual pages
 	onboarding: {
 		gap: 48,
@@ -98,7 +146,10 @@ export default StyleSheet.create({
 		paddingTop: 96,
 		backgroundColor: '#a0dedd',
 	},
+	sectionOnboarding: {
+		gap: 16,
+	},
 	loginScreen: {
-		paddingTop: 96,
+		paddingTop: 72,
 	},
 })
