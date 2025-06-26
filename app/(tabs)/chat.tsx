@@ -1,10 +1,10 @@
 import { Text, View } from "react-native";
 import styles from '../../styles/styles';
 
-export default function Dashhoard() {
+export default function Chat() {
   return (
     <View style={styles.screen}>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Chat placeholder</Text>
     </View>
   );
 }
