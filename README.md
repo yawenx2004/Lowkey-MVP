@@ -20,6 +20,8 @@ To run on your local machine and view a demo on your iPhone, first install the E
 
 You should now be able to see a QR code. Scan it with camera app, and you should be able to see it in ExpoGo.
 
+## Tech Stack
+
 ## Features
 
 ## Future Improvements
